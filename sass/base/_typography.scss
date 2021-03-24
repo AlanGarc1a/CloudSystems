@@ -1,0 +1,15 @@
+.heading__primary {
+    &--main {
+        font-size: 5.5rem;
+        font-weight: 900;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+    }
+
+    &--sub {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
+}

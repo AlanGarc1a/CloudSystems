@@ -1,0 +1,25 @@
+{
+  "name": "cloudsystems",
+  "version": "1.0.0",
+  "description": "A cloud computing company",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev-server": "live-server",
+    "start": "concurrently \"npm run watch:sass\" \"npm run dev-server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanGarc1a/CloudSystems.git"
+  },
+  "author": "Alan Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanGarc1a/CloudSystems/issues"
+  },
+  "homepage": "https://github.com/AlanGarc1a/CloudSystems#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "node-sass": "^5.0.0"
+  }
+}

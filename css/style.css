@@ -1,0 +1,67 @@
+/* 
+    Reset
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box;
+  color: #fff; }
+
+.heading__primary--main {
+  font-size: 5.5rem;
+  font-weight: 900;
+  letter-spacing: .5rem;
+  text-transform: uppercase; }
+
+.heading__primary--sub {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 7rem; }
+
+.btn, .btn:link, .btn:visited {
+  color: #000000;
+  border: none;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10rem;
+  text-decoration: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-1rem);
+  transition: all .2s ease; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #fff; }
+
+.header {
+  height: 95vh;
+  background-image: url("../../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header__text-box {
+    position: absolute;
+    top: 48%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 70rem; }
