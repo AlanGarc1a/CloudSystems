@@ -31,34 +31,72 @@ body {
   margin-bottom: 7rem; }
 
 .btn, .btn:link, .btn:visited {
-  color: #000000;
+  color: #fff;
   border: none;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 5rem;
   font-size: 1.6rem;
+  font-weight: 500;
   display: inline-block;
   text-align: center;
-  border-radius: 10rem;
+  text-transform: uppercase;
+  border-radius: .5rem;
   text-decoration: none;
   cursor: pointer; }
 
-.btn:hover {
-  transform: translateY(-1rem);
+.btn-hover:hover {
+  transform: translateY(-0.5rem);
   transition: all .2s ease; }
 
 .btn:active, .btn:focus {
   outline: none;
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  transform: translateY(-1px); }
 
 .btn--white {
   background-color: #fff; }
+
+.btn--text-white {
+  color: #fff !important; }
+
+.btn-outline-white {
+  border: 1px solid #fff !important; }
+  .btn-outline-white:hover {
+    transition: background-color .2s ease;
+    background-color: #fff;
+    color: #000000; }
+
+.btn-gradient-blue {
+  background-image: linear-gradient(to right, #112d4e, #f9f7f7); }
+
+.navigation {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 6rem 2rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .navigation__home {
+    padding-right: 20rem; }
+  .navigation__brand {
+    font-size: 3rem;
+    color: #fff;
+    text-decoration: none; }
+  .navigation__nav {
+    display: flex;
+    padding-right: 20rem; }
+  .navigation__item {
+    font-size: 1.8rem;
+    padding: 1.3rem 2.5rem;
+    cursor: pointer; }
 
 .header {
   height: 95vh;
   background-image: url("../../img/hero.jpg");
   background-size: cover;
   background-position: top;
-  position: relative; }
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); }
   .header__text-box {
     position: absolute;
     top: 48%;
