@@ -1,0 +1,32 @@
+.navigation {
+
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding: 6rem 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__home {
+        padding-right: 20rem;
+    }
+
+    &__brand {
+        font-size: 3rem;
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    &__nav {
+        display: flex;
+        padding-right: 20rem;
+    }
+
+    &__item {
+        font-size: 1.8rem;
+        padding: 1.3rem 2.5rem;
+        cursor: pointer;
+    }
+}
