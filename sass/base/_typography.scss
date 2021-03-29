@@ -13,3 +13,21 @@
         margin-bottom: 7rem;
     }
 }
+
+.services__heading {
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .4rem;
+    color: $color-dark-blue;
+}
+
+//Features section
+.features__heading {
+    
+    font-size: 3rem;
+    color: $color-dark-blue;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 8rem;
+}
