@@ -15,3 +15,11 @@ $color-grey-dark-3: #333;
 //Box shadow effect
 $box-shadow: rgba(0,0,0,0.2);
 $box-shadow-hover: rgba(0,0,0,0.4);
+
+//GRID
+$grid-cols: 12; // # of columns in the grid
+$grid-bp-sm: 57.6rem; 
+$grid-bp-md: 76.8rem;
+$grid-bp-lg: 99.2rem;
+$grid-bp-xl: 120rem;
+$grid-bp-xxl: 140rem;
