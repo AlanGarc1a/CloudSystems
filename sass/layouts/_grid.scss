@@ -1,20 +1,24 @@
 .container {
-    max-width: 120rem;
+    max-width: 120.4rem;
     margin: 0 auto;
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 3rem;
-    overflow: hidden;
+
+    &--fluid {
+        margin: 0;
+        max-width: 100%;
+    }
 }
 
-.flex-grid {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   margin: 3rem;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.col {
-    flex-grow: 1;
-    flex-shrink: 1;
+@for $i from 1 through $grid-cols {
+    .col-#{$i} {
+        flex-basis: (100 / ($grid-cols / $i) ) * 1%;
+    }
 }
