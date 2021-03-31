@@ -1,7 +1,6 @@
 .feature {
     display: flex;
-    padding: 3rem 3rem;
-    border-radius: .8rem;
+    padding: 1.5rem 1.5rem;
 
     &__box {
         align-self: center;
@@ -13,9 +12,9 @@
     }
 
     &__description {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         margin-left: 3rem;
-        width: 50rem;
+        width: 40rem;
         overflow: hidden;
 
         &--title {
