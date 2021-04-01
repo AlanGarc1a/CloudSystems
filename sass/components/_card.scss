@@ -1,0 +1,65 @@
+.card {
+    height: 58rem;
+    background-color: $color-white;
+    border-radius: 1rem;
+
+    &__header {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $color-dark-blue;
+    }
+
+    &__sub {
+        font-size: 1.5rem;
+        text-align: center;
+        color: $color-dark-blue;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    &__pricing {
+        text-align: center;
+        color: $color-dark-blue;
+        font-size: 7rem;
+        padding: 2rem 4rem;
+
+        &-symbol {
+            display: inline-block;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+        font-size: 1.5rem;
+        color: $color-dark-blue;
+        padding: 3rem 2rem;
+        margin: 1.2rem 3rem;
+        list-style-type: '✓';
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &__item {
+            
+            &::before {
+                content: '';
+                font-size: 1.5rem;
+                color: $color-dark-blue;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
