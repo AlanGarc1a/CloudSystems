@@ -1,283 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="#" />
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>CloudSystems</title>
-    </head>
-    <body>
-        <!-- NAV -->
-        <div class="navigation">
-            <div class="navigation__home">
-                <a class="navigation__brand" href="#">Cloud Systems</a>
-            </div>
-            <nav class="navigation__nav">
-                <div class="navigation__item">
-                    Product
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>CloudSystems</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <!-- NAVBAR -->
+            <div class="navbar">
+                <div class="navbar__brand">
+                    <a class="nav__home" href="#">Cloud Systems</a>
                 </div>
-                <div class="navigation__item">
-                    About
+                <nav class="navbar-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Company
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <a class="btn btn-white">Sign Up</a>
                 </div>
-                <div class="navigation__item">
-                    Learn
-                </div>
-            </nav>
-            <div>
-                <a class="btn btn-outline-white" href="#">Sign Up</a>
             </div>
         </div>
-        <!-- HEADER -->
-        <header class="header">
-            <div class="header__text-box">
-                <h1 class="heading__primary">
-                    <span class="heading__primary--main">Cloud Systems</span>
-                    <p class="heading__primary--sub">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                </h1>
-                <a class="btn btn-hover btn-gradient-blue" href="#">Get Started</a>
-            </div>
-        </header>
-        <main>
-            <!-- FEATURES -->
-            <div class="bg-gradient-blue-gray">
-                <h2 class="features__heading">
-                    Features
-                </h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="feature">
-                                <div class="feature__box">
-                                    <svg class="feature__icon">
-                                         <use xlink:href="img/sprite.svg#cloud"></use>
-                                    </svg>
-                                </div>
-                                <p class="feature__description">
-                                    <span class="feature__description--title">Database</span>
-                                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                                    explicabo. 
-                                </p>
+        <div class="header__text-box">
+            <h1 class="heading__primary">
+                <span class="heading__primary--main">Cloud Systems</span>
+                <p class="heading__primary--sub">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s.
+                </p>
+            </h1>
+            <a class="btn btn-hover btn-gradient-blue" href="#">Get Started</a>
+        </div>
+    </header>
+    <main>
+        <!-- FEATURES -->
+        <div class="bg-gradient-blue-gray">
+            <h2 class="features__heading">
+                Features
+            </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="feature">
+                            <div class="feature__box">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#cloud"></use>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="feature">
-                                <div class="feature__box">
-                                    <svg class="feature__icon">
-                                         <use xlink:href="img/sprite.svg#cloud-computing"></use>
-                                    </svg>
-                                </div>
-                                <p class="feature__description">
-                                    <span class="feature__description--title">Cloud Storage</span>
-                                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                                    explicabo. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="feature">
-                                <div class="feature__box">
-                                    <svg class="feature__icon">
-                                        <use xlink:href="img/sprite.svg#infrastructure"></use>
-                                    </svg>
-                                </div>
-                                <p class="feature__description">
-                                    <span class="feature__description--title">Infrastructure</span>
-                                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                                    explicabo. 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="feature">
-                                <div class="feature__box">
-                                    <svg class="feature__icon">
-                                        <use xlink:href="img/sprite.svg#analysis"></use>
-                                    </svg>
-                                </div>
-                                <p class="feature__description">
-                                    <span class="feature__description--title">Analysis</span>
-                                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                                    explicabo. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="quote">
-                                <p class="quote__title">
-                                    Every team has access to the data
-                                </p>
-                                <p class="quote__paragraph">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui 
-                                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
-                                    et quas molestias excepturi sint occaecati cupiditate non provident, 
-                                    similique sunt in culpa qui officia deserunt mollitia animi, id est 
-                                    laborum et dolorum fuga.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MACHINE LEARNING -->
-            <section class="section-learning">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="section-learning__img" src="img/ml-learning.jpg" alt="machine-learning" />
-                            <!-- <a href='https://www.freepik.com/vectors/technology'>Technology vector created by vectorjuice - www.freepik.com</a> -->
-                        </div>
-                        <div class="col-6">
-                            <div class="section-learning-wrapper">
-                                <h3 class="section-learning__title">Machine Learning + Cloud</h3>
-                                <p class="section-learning__paragraph">
-                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-                                    saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
-                                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
-                                    maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- AI -->
-            <section class="section-ai">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="section-ai-wrapper">
-                                <h3 class="section-learning__title">Big Data + Cloud</h3>
-                                <p class="section-learning__paragraph">
-                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-                                    saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. 
-                                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
-                                    maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <img class="section-ai__img" src="img/big-data.jpg" alt="artificial intelligence" />
-                            <!-- <a href='https://www.freepik.com/vectors/business'>Business vector created by jcomp - www.freepik.com</a> -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- ANALYSIS -->
-            <section class="section-analysis">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="report__title">Perform Report Analysis to Clients</h3>
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
-                                impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+                            <p class="feature__description">
+                                <span class="feature__description--title">Database</span>
+                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt
+                                explicabo.
                             </p>
                         </div>
                     </div>
-                    <img  class="section-analysis__img" src="img/analysis.jpg" alt="analysis" />
-                    <!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by rawpixel.com - www.freepik.com</a> -->
-                </div>
-            </section>
-            <!-- PRICING -->
-            <section class="section-pricing">
-                <div class="section-pricing-wrapper">
-                    <h3 class="section-pricing__heading">Pricing</h3>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card">
-                                <div class="card__header">
-                                    <span class="card__title">Startup</span>
-                                </div>
-                                <div class="card__sub">
-                                    Great for small businesses with a limited amount of payments.
-                                </div>
-                                <div class="card__pricing">
-                                    10<span class="card__pricing-symbol">$/mo</span>
-                                </div>
-                                <div class="card__btn">
-                                    <a class="btn btn--dark-blue btn-hover" href="#">Get a Free Trial</a>
-                                </div>
-                                <ul class="card__list">
-                                    <li class="card__list__item">Unlimited Bills</li>
-                                    <li class="card__list__item">Unlimited Users</li>
-                                    <li class="card__list__item">Recognize</li>
-                                    <li class="card__list__item">Pay</li>
-                                    <li class="card__list__item">Integrate</li>
-                                </ul>
+                    <div class="col-6">
+                        <div class="feature">
+                            <div class="feature__box">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#cloud-computing"></use>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card">
-                                <div class="card__header">
-                                    <span class="card__title">Business</span>
-                                </div>
-                                <div class="card__sub">
-                                    Perfect for mid tier business that don't require advance features.
-                                </div>
-                                <div class="card__pricing">
-                                    50<span class="card__pricing-symbol">$/mo</span>
-                                </div>
-                                <div class="card__btn">
-                                    <a class="btn btn--dark-blue btn-hover" href="#">Get a Free Trial</a>
-                                </div>
-                                <ul class="card__list">
-                                    <li class="card__list__item">Unlimited Bills</li>
-                                    <li class="card__list__item">Custom user rolls</li>
-                                    <li class="card__list__item">Recognize</li>
-                                    <li class="card__list__item">Pay</li>
-                                    <li class="card__list__item">Integrate</li>
-                                    <li class="card__list__item">Basic Approval Flow</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card">
-                                <div class="card__header">
-                                    <span class="card__title">Business Plus</span>
-                                </div>
-                                <div class="card__sub">
-                                    Excellent for Established businesses with a large amount of turnover.
-                                </div>
-                                <div class="card__pricing">
-                                    100<span class="card__pricing-symbol">$/mo</span>
-                                </div>
-                                <div class="card__btn">
-                                    <a class="btn btn--dark-blue btn-hover" href="#">Get a Free Trial</a>
-                                </div>
-                                <ul class="card__list">
-                                    <li class="card__list__item">Custom user rolls</li>
-                                    <li class="card__list__item">Recognize</li>
-                                    <li class="card__list__item">Pay</li>
-                                    <li class="card__list__item">Extended Approval Flow</li>
-                                    <li class="card__list__item">Dedicated 24/7 support</li>
-                                    <li class="card__list__item">Integrate</li>
-                                    <li class="card__list__item">API access</li>
-                                </ul>
-                            </div>
+                            <p class="feature__description">
+                                <span class="feature__description--title">Cloud Storage</span>
+                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt
+                                explicabo.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </body>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="feature">
+                            <div class="feature__box">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#infrastructure"></use>
+                                </svg>
+                            </div>
+                            <p class="feature__description">
+                                <span class="feature__description--title">Infrastructure</span>
+                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt
+                                explicabo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="feature">
+                            <div class="feature__box">
+                                <svg class="feature__icon">
+                                    <use xlink:href="img/sprite.svg#analysis"></use>
+                                </svg>
+                            </div>
+                            <p class="feature__description">
+                                <span class="feature__description--title">Analysis</span>
+                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                beatae vitae dicta sunt
+                                explicabo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="quote">
+                            <p class="quote__title">
+                                Every team has access to the data
+                            </p>
+                            <p class="quote__paragraph">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                                et quas molestias excepturi sint occaecati cupiditate non provident,
+                                similique sunt in culpa qui officia deserunt mollitia animi, id est
+                                laborum et dolorum fuga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MACHINE LEARNING -->
+        <section class="section-learning">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="section-learning__img" src="img/ml-learning.jpg" alt="machine-learning" />
+                        <!-- <a href='https://www.freepik.com/vectors/technology'>Technology vector created by vectorjuice - www.freepik.com</a> -->
+                    </div>
+                    <div class="col-6">
+                        <div class="section-learning-wrapper">
+                            <h3 class="section-learning__title">Machine Learning + Cloud</h3>
+                            <p class="section-learning__paragraph">
+                                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                                saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                                Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
+                                maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- AI -->
+        <section class="section-ai">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="section-ai-wrapper">
+                            <h3 class="section-learning__title">Big Data + Cloud</h3>
+                            <p class="section-learning__paragraph">
+                                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
+                                saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+                                Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
+                                maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <img class="section-ai__img" src="img/big-data.jpg" alt="artificial intelligence" />
+                        <!-- <a href='https://www.freepik.com/vectors/business'>Business vector created by jcomp - www.freepik.com</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ANALYSIS -->
+        <section class="section-analysis">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="report__title">Perform Report Analysis to Clients</h3>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                            Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                            nobis est eligendi optio cumque nihil
+                            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
+                            omnis dolor repellendus.
+                        </p>
+                    </div>
+                </div>
+                <img class="section-analysis__img" src="img/analysis.jpg" alt="analysis" />
+                <!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by rawpixel.com - www.freepik.com</a> -->
+            </div>
+        </section>
+        <!-- PRICING -->
+        <section class="section-pricing">
+            <div class="section-pricing-wrapper">
+                <h3 class="section-pricing__heading">Pricing</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card__header">
+                                <span class="card__title">Startup</span>
+                            </div>
+                            <div class="card__sub">
+                                Great for small businesses with a limited amount of payments.
+                            </div>
+                            <div class="card__pricing">
+                                10<span class="card__pricing-symbol">$/mo</span>
+                            </div>
+                            <div class="card__btn">
+                                <a class="btn btn--dark-blue btn-hover" href="#">Get a Free Trial</a>
+                            </div>
+                            <ul class="card__list">
+                                <li class="card__list__item">Unlimited Bills</li>
+                                <li class="card__list__item">Unlimited Users</li>
+                                <li class="card__list__item">Recognize</li>
+                                <li class="card__list__item">Pay</li>
+                                <li class="card__list__item">Integrate</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card__header">
+                                <span class="card__title">Business</span>
+                            </div>
+                            <div class="card__sub">
+                                Perfect for mid tier business that don't require advance features.
+                            </div>
+                            <div class="card__pricing">
+                                50<span class="card__pricing-symbol">$/mo</span>
+                            </div>
+                            <div class="card__btn">
+                                <a class="btn btn--dark-blue btn-hover" href="#">Get a Free Trial</a>
+                            </div>
+                            <ul class="card__list">
+                                <li class="card__list__item">Unlimited Bills</li>
+                                <li class="card__list__item">Custom user rolls</li>
+                                <li class="card__list__item">Recognize</li>
+                                <li class="card__list__item">Pay</li>
+                                <li class="card__list__item">Integrate</li>
+                                <li class="card__list__item">Basic Approval Flow</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card__header">
+                                <span class="card__title">Business Plus</span>
+                            </div>
+                            <div class="card__sub">
+                                Excellent for Established businesses with a large amount of turnover.
+                            </div>
+                            <div class="card__pricing">
+                                100<span class="card__pricing-symbol">$/mo</span>
+                            </div>
+                            <div class="card__btn">
+                                <a class="btn btn--dark-blue btn-hover" href="#">Get a Free Trial</a>
+                            </div>
+                            <ul class="card__list">
+                                <li class="card__list__item">Custom user rolls</li>
+                                <li class="card__list__item">Recognize</li>
+                                <li class="card__list__item">Pay</li>
+                                <li class="card__list__item">Extended Approval Flow</li>
+                                <li class="card__list__item">Dedicated 24/7 support</li>
+                                <li class="card__list__item">Integrate</li>
+                                <li class="card__list__item">API access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-reviews">
+
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
