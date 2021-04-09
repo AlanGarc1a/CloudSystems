@@ -1,0 +1,29 @@
+.footer {
+    background-color: $color-dark-blue;
+    padding: 9rem;
+
+    &__brand {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        margin-bottom: 1.1rem;
+    }
+
+    &__bottom {
+        background-color: $color-dark-blue-1;
+        padding: 2rem 0;
+
+        &-brand {
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+    }
+}
