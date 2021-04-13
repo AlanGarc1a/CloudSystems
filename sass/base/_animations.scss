@@ -1,0 +1,49 @@
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    70% {
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes drifting-left {
+    0% {
+        transform: translate(0, 0);
+        animation-timing-function: ease-in-out;
+    }
+
+    50% {
+        transform: translate(.8rem, 0);
+        animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes drifting-right {
+    0% {
+        transform: translate(0, 0);
+        animation-timing-function: ease-in-out;
+    }
+
+    50% {
+        transform: translate(.8rem, 0);
+        animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        animation-timing-function: ease-in-out;
+    }
+}
