@@ -8,6 +8,10 @@ section {
     margin-bottom: 6rem;
 }
 
+.section-features {
+    background-image: linear-gradient(to top left, $color-dark-blue, $color-medium-gray);
+}
+
 //machine learning section
 .section-learning {
     background-color: $color-grey-light-2;
