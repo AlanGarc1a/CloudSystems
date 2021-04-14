@@ -2,6 +2,7 @@
 $color-white: #fff;
 $color-black: #000000;
 $color-dark-blue: #112d4e;
+$color-dark-blue-1: #00162f;
 $color-medium-blue: #3f72af;
 $color-medium-gray: #dbe2ef;
 $color-light-gray:#f9f7f7;
@@ -18,8 +19,9 @@ $box-shadow-hover: rgba(0,0,0,0.4);
 
 //GRID
 $grid-cols: 12; // # of columns in the grid
-$grid-bp-sm: 57.6rem; 
-$grid-bp-md: 76.8rem;
-$grid-bp-lg: 99.2rem;
-$grid-bp-xl: 120rem;
-$grid-bp-xxl: 140rem;
+
+//breakpoints
+$grid-bp-largest: 112.5em;    //1800px 1800 / 16
+$grid-bp-large: 75em;   //1200px 1200 / 16
+$grid-bp-medium: 56.25em;  //900px 900 / 16
+$grid-bp-small: 37.5em;   //600px 600 / 16
