@@ -49,6 +49,32 @@ faders.forEach( fader => {
     showOnScroll.observe(fader);
 });
 
+/* observe the cards coming into the viewport */
 cards.forEach( card => {
     cardShow.observe(card);
 });
+
+//navigation slider 
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+    const body = document.querySelector('body');
+
+    //toggle nav
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+
+        if(!body.classList.contains('u-body-hidden')){
+            body.classList.add('u-body-hidden');
+        }
+        else {
+            body.classList.remove('u-body-hidden');
+        }
+        //burger animation
+        burger.classList.toggle('toggle');
+    });
+
+}
+
+//invoke navSlide
+navSlide();
