@@ -12,12 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
     <title>CloudSystems</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
+        <!-- NAVBAR -->
         <div class="container">
             <!-- NAVBAR -->
             <div class="navbar">
@@ -26,6 +29,9 @@
                 </div>
                 <nav class="navbar-nav">
                     <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign Up</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Resources</a>
                         </li>
@@ -39,31 +45,37 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
-                    <a class="btn btn-outline-white">Sign Up</a>
+                <div class="navbar-btn">
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
             </div>
         </div>
-        <div class="header__text-box">
-            <h1 class="heading__primary">
-                <span class="heading__primary--main">Cloud Systems</span>
-                <p class="heading__primary--sub">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.
-                </p>
-            </h1>
-            <a class="btn btn-hover btn-gradient-blue" href="#">Get Started</a>
+        <div class="container">
+            <div class="header__text-box">
+                <h1 class="heading__primary">
+                    <span class="heading__primary--main">Cloud Systems</span>
+                    <p class="heading__primary--sub">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                    </p>
+                </h1>
+                <a class="btn btn-hover btn-gradient-blue" href="#">Get Started</a>
+            </div>
         </div>
     </header>
     <main>
         <!-- FEATURES -->
-        <div class="bg-gradient-blue-gray">
-            <h2 class="features__heading">
-                Features
-            </h2>
+        <section class="section-features">
             <div class="container">
+                <h2 class="features__heading">
+                    Features
+                </h2>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 u-fade-in">
                         <div class="feature">
                             <div class="feature__box">
                                 <svg class="feature__icon">
@@ -80,7 +92,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 u-fade-in">
                         <div class="feature">
                             <div class="feature__box">
                                 <svg class="feature__icon">
@@ -99,7 +111,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 u-fade-in">
                         <div class="feature">
                             <div class="feature__box">
                                 <svg class="feature__icon">
@@ -116,7 +128,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 u-fade-in">
                         <div class="feature">
                             <div class="feature__box">
                                 <svg class="feature__icon">
@@ -135,7 +147,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 u-fade-in">
                         <div class="quote">
                             <p class="quote__title">
                                 Every team has access to the data
@@ -151,7 +163,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- MACHINE LEARNING -->
         <section class="section-learning">
             <div class="container">
@@ -216,7 +228,7 @@
                         </p>
                     </div>
                 </div>
-                <img class="section-analysis__img" src="img/analysis.jpg" alt="analysis" />
+                <img class="section-analysis__img" src="img/analysis.png" alt="analysis" />
                 <!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by rawpixel.com - www.freepik.com</a> -->
             </div>
         </section>
@@ -227,7 +239,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 u-fade-in">
                         <div class="card">
                             <div class="card__header">
                                 <span class="card__title">Startup</span>
@@ -250,7 +262,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 u-fade-in">
                         <div class="card">
                             <div class="card__header">
                                 <span class="card__title">Business</span>
@@ -274,7 +286,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 u-fade-in">
                         <div class="card">
                             <div class="card__header">
                                 <span class="card__title">Business Plus</span>
