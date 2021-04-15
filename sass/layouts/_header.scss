@@ -1,5 +1,5 @@
 .header {
-    height: 95vh;
+    height: 97vh;
 
     background-image: url('../../img/hero.jpg');
     background-size: cover;
@@ -7,10 +7,23 @@
     position: relative;
 
     &__text-box {
+
         position: absolute;
-        top: 50%;
-        left: 35%;
-        transform: translate(-50%, -50%);
+        top: 40%;
         width: 70rem;
+
+        @include respond(tab-port) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        @include respond(tab-land) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
     }
 }
