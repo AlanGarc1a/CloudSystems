@@ -10,10 +10,32 @@
     &-nav {
         align-self: center;
     }
+
+    &-btn {
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
 }
 
 .nav {
     list-style-type: none;
+
+    @include respond(tab-port) {
+        position: absolute;
+        top: 10rem;
+        left: 10%;
+        z-index: 1;
+        height: 90vh;
+        width: 100%;
+        background-color: $color-dark-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
 
     &__home {
         font-size: 2rem;
@@ -25,6 +47,12 @@
         float: right;
         font-size: 1.5rem;
         margin-right: 4rem;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
     }
 
     &-link:link,
@@ -32,4 +60,42 @@
         text-decoration: none;
         color: $color-white;
     }
+
+    &-link:hover {
+        border-bottom: .1rem solid $color-white;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.burger {
+    display: none;
+    align-self: center;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+}
+
+.burger > div {
+    width: 3rem;
+    height: .3rem;
+    background-color: $color-white;
+    margin: .6rem;
+    transition: all .3s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-.5rem, .9rem);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-.5rem, -.8rem);
 }
