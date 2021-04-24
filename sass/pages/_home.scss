@@ -14,7 +14,6 @@ section {
 
 //machine learning section
 .section-learning {
-    background-color: $color-grey-light-2;
 
     &__img {
         width: 100%;
@@ -26,6 +25,11 @@ section {
         flex-direction: column;
         justify-content: center;
         margin-left: 3rem;
+
+        @include respond(tab-port) {
+            align-items: center;
+            margin-top: 4rem;
+        }
     }
 
     &__title {
@@ -39,6 +43,11 @@ section {
         font-size: 2rem;
         font-weight: 300;
         color: $color-dark-blue;
+        @include respond(tab-port) {
+            align-items: center;
+            margin-top: 4rem;
+            text-align: center;
+        }
     }
 
     &__more {
@@ -58,6 +67,10 @@ section {
             transform: scale(1.1);
             transition: all .2s ease-in;
         }
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
     }
 }
 
@@ -74,6 +87,12 @@ section {
         flex-direction: column;
         justify-content: center;
         margin-right: 4rem;
+        
+        @include respond(tab-port) {
+            align-items: center;
+            margin-right: 0rem;
+            margin-bottom: 4rem;
+        }
     }
 }
 
@@ -119,8 +138,9 @@ section {
     align-items: center;
 
     &__icon {
-        height: 8.5rem;
-        width: 6.5rem;
+        height: 6.5rem;
+        width: 5rem;
+        color: $color-black;
         margin-right: 4rem;
         opacity: .5;
         cursor: pointer;
@@ -136,12 +156,54 @@ section {
 //customers
 .section-customers {
     padding: 6rem 0rem;
+    position: relative;
 }
 
 .customers {
     margin-top: 4rem;
     box-shadow: 0 0 .5rem .4rem $box-shadow;
     position: relative;
+
+    &-btn-left {
+        position: absolute;
+        top: 65%;
+        left: 60rem;
+        transform: translate(-50%, -50%);
+        margin-top: -5rem;
+        z-index: 4;
+        animation-name: drifting-left;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        cursor: pointer;
+    }
+
+    &-btn-right {
+        position: absolute;
+        top: 65%;
+        right: 60rem;
+        transform: translate(-50%, -50%);
+        margin-top: -5rem;
+        z-index: 4;
+        animation-name: drifting-right;
+        animation-duration:  2s;
+        animation-iteration-count: infinite;
+        cursor: pointer;
+    }
+    
+    &-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &-left {
+        float: left;
+        min-height: 5.2rem;
+    }
+
+    &-right {
+        overflow: hidden;
+        min-height: 5.2rem;
+    }
 
     &-content {
         padding: 7rem 8rem;
