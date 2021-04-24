@@ -14,36 +14,14 @@
     }
 }
 
-@keyframes drifting-left {
-    0% {
-        transform: translate(0, 0);
-        animation-timing-function: ease-in-out;
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(5rem);
     }
 
-    50% {
-        transform: translate(.8rem, 0);
-        animation-timing-function: ease-in-out;
-    }
-
-    100% {
-        transform: translate(0, 0);
-        animation-timing-function: ease-in-out;
-    }
-}
-
-@keyframes drifting-right {
-    0% {
-        transform: translate(0, 0);
-        animation-timing-function: ease-in-out;
-    }
-
-    50% {
-        transform: translate(.8rem, 0);
-        animation-timing-function: ease-in-out;
-    }
-
-    100% {
-        transform: translate(0, 0);
-        animation-timing-function: ease-in-out;
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
