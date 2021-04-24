@@ -10,6 +10,29 @@
     padding-bottom: 6rem;
 }
 
-.bg-gradient-blue-gray {
-    background-image: linear-gradient(to top left, $color-dark-blue, $color-medium-gray);
+.u-link {
+    &:link,
+    &:visited {
+        color: $color-white;
+        text-decoration: none;
+    }
+}
+
+.u-fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.u-fade-in-appear {
+    opacity: 1;
+}
+
+.u-slideInFromBottom {
+    animation-name: slideInFromBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.u-body-hidden {
+    overflow: hidden;
 }
