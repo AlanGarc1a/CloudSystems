@@ -1,3 +1,9 @@
+<h3 align="center">
+    Cloud Systems
+</h3>
+
+![image](https://github.com/AlanGarc1a/CloudSystems/blob/main/img/image.png?raw=true)
+
 # CloudSystems
 
 A landing page for a fictional company called Cloud Systems where they host any type of software and business.
@@ -11,6 +17,7 @@ I really enjoy seeing modern landing pages for companies. The design that gets p
 * HTML5
 * CSS3(Sass) 
 * JavaScript
+* Icons - ionicons
 
 # Installation
 
@@ -22,5 +29,4 @@ To run this project, install it locally using npm:
 2. npm install - to install npm packages
 
 3. npm start - to start the server
-
 ```
