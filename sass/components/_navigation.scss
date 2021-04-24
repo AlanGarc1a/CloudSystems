@@ -37,10 +37,17 @@
         transition: transform 0.5s ease-in;
     }
 
+    &__icon {
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-right: 3rem;
+    }
+
     &__home {
         font-size: 2rem;
         text-decoration: none;
         color: $color-white;
+        margin-bottom: 3rem;
     }
 
     &-item {
