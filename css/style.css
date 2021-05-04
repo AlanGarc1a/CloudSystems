@@ -186,9 +186,6 @@ body {
     background-color: #fff;
     color: #000000; }
 
-.btn-gradient-blue {
-  background-image: linear-gradient(to right, #112d4e, #f9f7f7); }
-
 .card {
   height: 58rem;
   background-color: #fff;
@@ -487,7 +484,8 @@ body {
 
 .header {
   height: 97vh;
-  background-image: url("../../hero.jpg");
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #062087 73%);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -507,6 +505,30 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center; } }
+  .header__image {
+    position: absolute;
+    top: 33%;
+    left: 65%; }
+    @media screen and (max-width: 56.25em) {
+      .header__image {
+        width: 25rem; } }
+    @media screen and (max-width: 75em) {
+      .header__image {
+        width: 25rem; } }
+    @media screen and (max-width: 37.5em) {
+      .header__image {
+        display: none; } }
+  .header__img {
+    width: 50rem; }
+    @media screen and (max-width: 56.25em) {
+      .header__img {
+        width: 25rem; } }
+    @media screen and (max-width: 75em) {
+      .header__img {
+        width: 25rem; } }
+    @media screen and (max-width: 37.5em) {
+      .header__img {
+        display: none; } }
 
 section {
   padding-top: 12rem;
