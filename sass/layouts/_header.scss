@@ -1,7 +1,8 @@
 .header {
     height: 97vh;
 
-    background-image: url('../../hero.jpg');
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,32,135,1) 73%);   
     background-size: cover;
     background-position: top;
     position: relative;
@@ -24,6 +25,40 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 33%;
+        left: 65%;
+
+        @include respond(tab-port) {
+            width: 25rem;
+        }
+
+        @include respond(tab-land) {
+            width: 25rem;
+        }
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 50rem;
+
+        @include respond(tab-port) {
+            width: 25rem;
+        }
+
+        @include respond(tab-land) {
+            width: 25rem;
+        }
+
+        @include respond(phone) {
+            display: none;
         }
     }
 }
