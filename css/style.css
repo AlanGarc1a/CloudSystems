@@ -186,6 +186,10 @@ body {
     background-color: #fff;
     color: #000000; }
 
+.btn--form {
+  font-size: 1rem;
+  background-color: #112d4e; }
+
 .card {
   height: 58rem;
   background-color: #fff;
@@ -254,6 +258,56 @@ body {
     overflow: hidden; }
     .feature__description--title {
       font-weight: 700; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 18rem;
+  border-radius: 1rem;
+  box-shadow: 0.4rem 0.4rem 3rem rgba(0, 0, 0, 0.8); }
+  .form__group {
+    margin-right: 2rem;
+    margin-bottom: 2rem; }
+  .form__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  .form__title {
+    display: inline-block;
+    font-size: 3.4rem;
+    font-weight: 500;
+    font-family: inherit;
+    margin-bottom: 5rem;
+    color: #000000; }
+  .form__label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: .7rem;
+    color: #000000; }
+  .form__input {
+    border: none;
+    background: #f7f7f7;
+    padding: 1.8rem;
+    border-radius: .3rem;
+    width: 25rem; }
+    .form__input:focus {
+      outline: none; }
+  .form__btn {
+    margin-top: 5rem;
+    width: 100%; }
+  .form__terms {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    color: #000000; }
+  .form__link {
+    color: #3f72af; }
+
+.icon {
+  width: 4rem;
+  height: 4rem; }
 
 .navbar {
   padding-top: 4rem;
@@ -722,3 +776,10 @@ section {
 .cta__inline {
   display: inline-block;
   margin-right: 2rem; }
+
+.signup {
+  background-image: linear-gradient(to right bottom, #00162f, #112d4e);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
