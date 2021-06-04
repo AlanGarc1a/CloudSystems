@@ -42,7 +42,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -186,10 +187,6 @@ body {
     background-color: #fff;
     color: #000000; }
 
-.btn--form {
-  font-size: 1rem;
-  background-color: #112d4e; }
-
 .card {
   height: 58rem;
   background-color: #fff;
@@ -266,14 +263,14 @@ body {
   padding: 18rem;
   border-radius: 1rem;
   box-shadow: 0.4rem 0.4rem 3rem rgba(0, 0, 0, 0.8); }
-  .form__group {
-    margin-right: 2rem;
-    margin-bottom: 2rem; }
   .form__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
+  .form__group {
+    margin-right: 2rem;
+    margin-bottom: 2rem; }
   .form__title {
     display: inline-block;
     font-size: 3.4rem;
@@ -304,10 +301,6 @@ body {
     color: #000000; }
   .form__link {
     color: #3f72af; }
-
-.icon {
-  width: 4rem;
-  height: 4rem; }
 
 .navbar {
   padding-top: 4rem;

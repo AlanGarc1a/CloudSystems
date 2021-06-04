@@ -19,6 +19,8 @@ html {
     @include respond(tab-port) {
         font-size: 50%; //1rem = 8px, 8px / 16 = 50
     }
+
+    scroll-behavior: smooth;
 }
 
 body {
