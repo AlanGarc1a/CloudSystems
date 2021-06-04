@@ -66,3 +66,18 @@
         color: $color-medium-blue;
     }
 }
+
+.login {
+    font-size: 1.4rem;
+    color: $color-black;
+    margin-top: 1rem;
+
+    &__link {
+        &:visited,
+        &:link {
+            font-size: 1.5rem;
+            color: $color-medium-blue;
+            text-decoration: none;
+        }
+    }
+}
