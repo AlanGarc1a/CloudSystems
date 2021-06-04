@@ -266,6 +266,9 @@ body {
   padding: 18rem;
   border-radius: 1rem;
   box-shadow: 0.4rem 0.4rem 3rem rgba(0, 0, 0, 0.8); }
+  @media screen and (max-width: 37.5em) {
+    .form {
+      padding: 5rem; } }
   .form__row {
     display: flex;
     flex-wrap: wrap;

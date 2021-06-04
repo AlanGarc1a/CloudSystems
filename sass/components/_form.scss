@@ -6,6 +6,10 @@
     border-radius: 1rem;
     box-shadow: .4rem .4rem 3rem rgba(0, 0, 0, 0.8);
 
+    @include respond(phone) {
+        padding: 5rem;
+    }
+
     &__row {
         display: flex;
         flex-wrap: wrap;
