@@ -187,6 +187,9 @@ body {
     background-color: #fff;
     color: #000000; }
 
+.btn--form {
+  background-color: #112d4e; }
+
 .card {
   height: 58rem;
   background-color: #fff;
