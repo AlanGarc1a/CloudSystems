@@ -161,49 +161,8 @@ section {
 
 .customers {
     margin-top: 4rem;
-    box-shadow: 0 0 .5rem .4rem $box-shadow;
-    position: relative;
-
-    &-btn-left {
-        position: absolute;
-        top: 65%;
-        left: 60rem;
-        transform: translate(-50%, -50%);
-        margin-top: -5rem;
-        z-index: 4;
-        animation-name: drifting-left;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        cursor: pointer;
-    }
-
-    &-btn-right {
-        position: absolute;
-        top: 65%;
-        right: 60rem;
-        transform: translate(-50%, -50%);
-        margin-top: -5rem;
-        z-index: 4;
-        animation-name: drifting-right;
-        animation-duration:  2s;
-        animation-iteration-count: infinite;
-        cursor: pointer;
-    }
-    
-    &-icon {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    &-left {
-        float: left;
-        min-height: 5.2rem;
-    }
-
-    &-right {
-        overflow: hidden;
-        min-height: 5.2rem;
-    }
+    display: flex;
+    overflow: hidden;
 
     &-content {
         padding: 7rem 8rem;
@@ -224,16 +183,19 @@ section {
             font-size: 1.3rem;
             color: $color-grey-dark;
         }
+    }
 
-        &::before {
-            content: "\201C";
-            position: absolute;
-            font-size: 8rem;
-            line-height: 1;
-            top: 1.1rem;
-            font-family: sans-serif;
-            color: $color-dark-blue;
-        }
+    &-icon {
+        color: $color-black;
+        font-size: 3rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+
+    &-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

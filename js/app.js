@@ -78,3 +78,38 @@ const navSlide = () => {
 
 //invoke navSlide
 navSlide();
+
+//carousel
+const customers = document.querySelector('.customers');
+const slides = [...customers.children];
+
+const prevBtn = document.getElementById('#prevBtn');
+const nextBtn = document.getElementById('#nextBtn');
+
+nextBtn.addEventListener('click', () => {
+    const currentSlide = document.querySelector('.u-active');
+    let nextSlide = currentSlide.nextElementSibling;
+
+    if(currentSlide.nextElementSibling === null) {
+        nextSlide = customers.children[0];
+    }
+    
+    currentSlide.classList.remove('u-active');
+    currentSlide.classList.add('u-unactive');
+    nextSlide.classList.remove('u-unactive');
+    nextSlide.classList.add('u-active');
+});
+
+prevBtn.addEventListener('click', () => {
+    const currentSlide = document.querySelector('.u-active');
+    let prevSlide = currentSlide.previousElementSibling;
+
+    if(currentSlide.previousElementSibling === null) {
+        prevSlide = customers.children[customers.children.length - 1];
+    }
+    
+    currentSlide.classList.remove('u-active');
+    currentSlide.classList.add('u-unactive');
+    prevSlide.classList.add('u-unactive');
+    prevSlide.classList.add('u-active');
+});

@@ -143,6 +143,15 @@ body {
 .u-body-hidden {
   overflow: hidden; }
 
+.u-d-none {
+  display: none; }
+
+.u-unactive {
+  display: none; }
+
+.u-active {
+  display: block; }
+
 .btn, .btn:link, .btn:visited {
   color: #fff;
   border: none;
@@ -710,39 +719,8 @@ section {
 
 .customers {
   margin-top: 4rem;
-  box-shadow: 0 0 0.5rem 0.4rem rgba(0, 0, 0, 0.2);
-  position: relative; }
-  .customers-btn-left {
-    position: absolute;
-    top: 65%;
-    left: 60rem;
-    transform: translate(-50%, -50%);
-    margin-top: -5rem;
-    z-index: 4;
-    animation-name: drifting-left;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    cursor: pointer; }
-  .customers-btn-right {
-    position: absolute;
-    top: 65%;
-    right: 60rem;
-    transform: translate(-50%, -50%);
-    margin-top: -5rem;
-    z-index: 4;
-    animation-name: drifting-right;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    cursor: pointer; }
-  .customers-icon {
-    width: 5rem;
-    height: 5rem; }
-  .customers-left {
-    float: left;
-    min-height: 5.2rem; }
-  .customers-right {
-    overflow: hidden;
-    min-height: 5.2rem; }
+  display: flex;
+  overflow: hidden; }
   .customers-content {
     padding: 7rem 8rem;
     text-align: left; }
@@ -756,14 +734,15 @@ section {
     .customers-content__company {
       font-size: 1.3rem;
       color: #777; }
-    .customers-content::before {
-      content: "\201C";
-      position: absolute;
-      font-size: 8rem;
-      line-height: 1;
-      top: 1.1rem;
-      font-family: sans-serif;
-      color: #112d4e; }
+  .customers-icon {
+    color: #000000;
+    font-size: 3rem;
+    margin-left: 1rem;
+    cursor: pointer; }
+  .customers-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .section-cta {
   background-color: #112d4e;
