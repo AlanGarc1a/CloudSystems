@@ -25,3 +25,36 @@
         transform: translateX(0);
     }
 }
+
+@keyframes slider {
+    
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes sliderNegX {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -48,3 +48,11 @@
 .u-active {
     display: block;
 }
+
+.u-slider-x {
+    animation: slider 0.5s ease-in;
+}
+
+.u-slider-neg-x {
+    animation: sliderNegX 0.5s ease-in;
+}

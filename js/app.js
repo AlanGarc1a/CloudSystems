@@ -96,8 +96,10 @@ nextBtn.addEventListener('click', () => {
     
     currentSlide.classList.remove('u-active');
     currentSlide.classList.add('u-unactive');
+    currentSlide.classList.add('u-slider-x');
     nextSlide.classList.remove('u-unactive');
     nextSlide.classList.add('u-active');
+    nextSlide.classList.add('u-slider-x');
 });
 
 prevBtn.addEventListener('click', () => {
@@ -110,6 +112,8 @@ prevBtn.addEventListener('click', () => {
     
     currentSlide.classList.remove('u-active');
     currentSlide.classList.add('u-unactive');
+    currentSlide.classList.add('u-slider-neg-x');
     prevSlide.classList.add('u-unactive');
     prevSlide.classList.add('u-active');
+    prevSlide.classList.add('u-slider-neg-x');
 });
